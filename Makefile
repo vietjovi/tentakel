@@ -38,6 +38,7 @@ htmldoc:
 
 install: configure
 	cd py && $(PYTHON) setup.py install --prefix=$(PREFIX)
+	sudo cp -r py/lekatnet/ /usr/lib/python2.7/site-packages/
 
 release:
 	rm -rf $(REL)
